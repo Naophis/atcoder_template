@@ -1,4 +1,4 @@
 tmp/
-no*.cpp
+main_*.cpp
 .idea/
 cmake-*/
