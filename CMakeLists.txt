@@ -10,5 +10,4 @@ add_executable(abc_no4 no4.cpp)
 add_executable(abc_no5 no5.cpp)
 add_executable(abc_no6 no6.cpp)
 
-message($ENV{ACLib_dir})
 include_directories($ENV{ACLib_dir})
