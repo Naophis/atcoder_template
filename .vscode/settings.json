@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "all": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
+    },
+    "editor.defaultFormatter": "xaver.clang-format",
+    "clang-format.language.cpp.style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 120, DerivePointerAlignment: false, PointerAlignment: Left }",
+    "[cpp]": {
+        "editor.tabSize": 2
+    },
+    "editor.formatOnSave": false
+}
