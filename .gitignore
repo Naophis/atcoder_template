@@ -2,3 +2,4 @@ tmp/
 main_*.cpp
 .idea/
 cmake-*/
+exe_*
