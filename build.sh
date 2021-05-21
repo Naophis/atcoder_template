@@ -18,6 +18,6 @@ if [ ! -e ./main_${1}.cpp ]; then
     exit 1
 fi
 
-g++ main_${1}.cpp -std=c++14 -I ${ACLib_dir} -o exe_${1} 
+g++ main_${1}.cpp -std=c++14 -I ${ACLib_dir} -o ${1}.out
 
 exit 0
