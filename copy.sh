@@ -11,4 +11,5 @@ mkdir -p log/$1
 
 cp $CURRENT/*.cpp $CURRENT/log/$1/
 cp $CURRENT/CMakeLists.txt $CURRENT/log/$1/
+cp $CURRENT/*.sh $CURRENT/log/$1/
 exit 0
