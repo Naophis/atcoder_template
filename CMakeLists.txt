@@ -3,7 +3,7 @@ project(abc)
 
 set(CMAKE_BUILD_TYPE Debug)
 #set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -std=c++14 -pg")
-set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -std=c++14")
+set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -std=c++17")
 
 add_executable(abc_a main_a.cpp)
 add_executable(abc_b main_b.cpp)
