@@ -1,5 +1,6 @@
 tmp/
-# main_*.cpp
+main_*.cpp
+!/log/**/*
 .idea/
 cmake-*/
-exe_*
+*.out

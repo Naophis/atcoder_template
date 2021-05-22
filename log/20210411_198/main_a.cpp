@@ -4,9 +4,11 @@
 
 using namespace atcoder;
 using namespace std;
-using ll = long long;
+using ull = unsigned long long;
 
 int main() {
-    printf("hello world\n");
+    int N;
+    cin >> N;
+    cout << N - 1 << endl;
     return 0;
 }

@@ -14,7 +14,8 @@
         "string_view": "cpp",
         "initializer_list": "cpp",
         "regex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "tuple": "cpp"
     },
     "editor.defaultFormatter": "xaver.clang-format",
     "clang-format.language.cpp.style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 120, DerivePointerAlignment: false, PointerAlignment: Left }",
