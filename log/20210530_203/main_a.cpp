@@ -15,6 +15,20 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ull N = 3;
+    vector<ull> v(3);
+    rep(i, N) {
+        cin >> v[i];
+    }
+
+    ull out = 0;
+    if (v[0] == v[1]) {
+        out = v[2];
+    } else if (v[1] == v[2]) {
+        out = v[0];
+    } else if (v[2] == v[0]) {
+        out = v[1];
+    }
+    printf("%lld\n", out);
     return 0;
 }

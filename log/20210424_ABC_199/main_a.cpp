@@ -15,6 +15,14 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ull A, B, C;
+    cin >> A >> B >> C;
+    ull a = A * A;
+    ull b = B * B;
+    ull c = C * C;
+    if (a + b < c)
+        cout << "Yes" << endl;
+    else
+        cout << "No" << endl;
     return 0;
 }

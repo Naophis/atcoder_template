@@ -15,6 +15,12 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll A, B, C, D;
+    cin >> A >> B >> C >> D;
+    if (D * C - B <= 0) {
+        cout << -1 << endl;
+        return 0;
+    }
+    cout << ceil((double) A / (D * C - B)) << endl;
     return 0;
 }

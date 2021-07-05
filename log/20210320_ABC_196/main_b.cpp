@@ -15,6 +15,16 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    string X;
+    cin >> X;
+
+    ull size = X.size();
+    for (int i = 0; i < size; i++) {
+        if (X[i] == '.')break;
+        cout << X[i];
+    }
+
+    cout << endl;
+
     return 0;
 }

@@ -15,6 +15,10 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    cout << b - c << endl;
+
     return 0;
 }

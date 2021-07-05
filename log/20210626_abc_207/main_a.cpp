@@ -15,6 +15,8 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll A, B, C;
+    cin >> A >> B >> C;
+    cout << A + B + C - min(min(A, B), C) << endl;
     return 0;
 }

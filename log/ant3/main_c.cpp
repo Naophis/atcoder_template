@@ -14,7 +14,26 @@ using ull = unsigned long long;
 #define repd(i, n) for (ll i = n - 1; i >= 0; i--)
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
+// 貪欲法＋辞書順最小問題
 int main() {
-    printf("hello world\n");
+
+    int N;
+    string s;
+
+    cin >> N;
+    cin >> s;
+
+    string t;
+    int start = 0, end = N - 1;
+    rep(i, N) //
+        if (s[start] < s[end])
+            t += s[start++];
+        else
+            t += s[end--];
+    cout << t << endl;
     return 0;
 }
+/*
+6
+ACDBCB
+*/

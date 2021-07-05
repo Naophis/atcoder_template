@@ -15,6 +15,17 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ull L, R;
+    cin >> L >> R;
+    ull n = 0;
+    for (ull x = 2; x <= R; x++) {
+        for (ull y = L; y <= R; y++) {
+            auto g = gcd(x, y);
+            if (g != 1 && x != g && y != g) {
+                n++;
+            }
+        }
+    }
+    cout << n << endl;
     return 0;
 }

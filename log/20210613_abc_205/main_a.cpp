@@ -15,6 +15,10 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    long double a, b;
+    cin >> a >> b;
+
+
+    cout << a * b / 100 << endl;
     return 0;
 }

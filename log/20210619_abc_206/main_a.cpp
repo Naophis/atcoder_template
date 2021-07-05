@@ -15,6 +15,15 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    double N;
+    cin >> N;
+    if (floor(1.08 * N) < 206) {
+        cout << "Yay!" << endl;
+    } else if (floor(1.08 * N) == 206) {
+        cout << "so-so" << endl;
+    } else {
+        cout << ":(" << endl;
+
+    }
     return 0;
 }

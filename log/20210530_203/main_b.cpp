@@ -15,6 +15,21 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ull N, K;
+    cin >> N >> K;
+
+    ull sum = 0;
+
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= K; j++) {
+            sum += i * 100 + j;
+        }
+    }
+    printf("%lld\n", sum);
     return 0;
 }
+//for (int i = 1; i <= N; i++) {
+//for (int j = 1; j <= K; j++) {
+//sum += i * 100 + j;
+//}
+//}

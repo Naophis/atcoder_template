@@ -15,6 +15,22 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll N;
+    cin >> N;
+    vector<ll> A(N);
+    unordered_map<ll, ll> a_map;
+    rep(i, N) {
+        cin >> A[i];
+        a_map[A[i]]++;
+    }
+    ll max_n = N * (N - 1) / 2;
+    unordered_map<ll, ll>::iterator itr = a_map.begin();
+    for (itr; itr != a_map.end(); itr++) {
+        if (itr->second > 1) {
+            max_n -= itr->second * (itr->second - 1) / 2;
+        }
+    }
+    cout << max_n << endl;
+
     return 0;
 }

@@ -14,7 +14,12 @@ using ull = unsigned long long;
 #define repd(i, n) for (ll i = n - 1; i >= 0; i--)
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
+ll A[900][900];
+
 int main() {
-    printf("hello world\n");
+    ll N, K;
+    cin >> N >> K;
+    rep(i, N)rep(j, N)cin >> A[i][j];
+
     return 0;
 }

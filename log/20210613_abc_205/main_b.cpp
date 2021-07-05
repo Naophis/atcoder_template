@@ -15,6 +15,22 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll N;
+    cin >> N;
+    vector<ll> A(N);
+    vector<ll> B(N);
+    rep(i, N) {
+        cin >> A[i];
+        B[i] = i + 1;
+    }
+    sort(A.begin(), A.end());
+    rep(i, N) {
+        if (A[i] != B[i]) {
+            cout << "No" << endl;
+            return 0;
+        }
+    }
+
+    cout << "Yes" << endl;
     return 0;
 }

@@ -15,6 +15,18 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ull N;
+    cin >> N;
+    ull sum = 0;
+    ll i = 1;
+    while (true) {
+        sum += i;
+        if (sum >= N) {
+            cout << i << endl;
+            break;
+        }
+        i++;
+    }
+
     return 0;
 }

@@ -15,6 +15,16 @@ using ull = unsigned long long;
 #define rrepd(i, n) for (ll i = n; i >= 1; i--)
 
 int main() {
-    printf("hello world\n");
+    ll N;
+    cin >> N;
+    vector<ll> A(N);
+    rep(i, N)cin >> A[i];
+
+    ull sum = 0;
+    rep(i, N) {
+        if (A[i] >= 10)
+            sum += (A[i] - 10);
+    }
+    cout << sum << endl;
     return 0;
 }
